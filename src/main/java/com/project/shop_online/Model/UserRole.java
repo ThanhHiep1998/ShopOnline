@@ -17,7 +17,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Document(collection = "User_Role")
-public class User_Role {
+public class UserRole {
 
 
     @Field(value = "user_id")
