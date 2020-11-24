@@ -19,34 +19,34 @@ import lombok.Setter;
 @Document(collection = "Images")
 public class Images {
 
-	@Id
-	@Field(value="_id")
-	private ObjectId id ;
-	
-	@Field(value="image_name")
-	private String imageName;
-	
-	@Field(value="product_id")
-	private ObjectId  productId;
-	
-	@Field(value="image_main")
-	private int imageMain;
-	
-	@Field(value="image_in_description")
-	private int imageInDescription;
-	
-	@Field(value="description")
-	private String description;
-	
-	@Field(value="created_date")
-	private Date  createdDate ;
-	
-	@Field(value="created_by")
-	private String createdBy;
-	
-	@Field(value="updated_date")
-	private Date updatedDate ;
-	
-	@Field(value="updated_by")
-	private String updatedBy ;
+    @Id
+    @Field(value = "_id")
+    private ObjectId id;
+
+    @Field(value = "image_name")
+    private String imageName;
+
+    @Field(value = "product_id")
+    private ObjectId productId;
+
+    @Field(value = "image_main")
+    private int imageMain;
+
+    @Field(value = "image_in_description")
+    private int imageInDescription;
+
+    @Field(value = "description")
+    private String description;
+
+    @Field(value = "created_date")
+    private Date createdDate;
+
+    @Field(value = "created_by")
+    private String createdBy;
+
+    @Field(value = "updated_date")
+    private Date updatedDate;
+
+    @Field(value = "updated_by")
+    private String updatedBy;
 }

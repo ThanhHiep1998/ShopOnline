@@ -19,25 +19,25 @@ import lombok.Setter;
 @Document(collection = "Brand")
 public class Brand {
 
-	@Id
-	@Field(value="_id")
-	private ObjectId id ;
-	
-	@Field(value="brand_name")
-	private String brandName;
-	
-	@Field(value="description")
-	private String description;
-	
-	@Field(value="created_date")
-	private Date  createdDate ;
-	
-	@Field(value="created_by")
-	private String createdBy;
-	
-	@Field(value="updated_date")
-	private Date updatedDate ;
-	
-	@Field(value="updated_by")
-	private String updatedBy ;
+    @Id
+    @Field(value = "_id")
+    private ObjectId id;
+
+    @Field(value = "brand_name")
+    private String brandName;
+
+    @Field(value = "description")
+    private String description;
+
+    @Field(value = "created_date")
+    private Date createdDate;
+
+    @Field(value = "created_by")
+    private String createdBy;
+
+    @Field(value = "updated_date")
+    private Date updatedDate;
+
+    @Field(value = "updated_by")
+    private String updatedBy;
 }

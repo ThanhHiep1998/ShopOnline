@@ -18,31 +18,29 @@ import lombok.Setter;
 @AllArgsConstructor
 @Document(collection = "CategoryProduct")
 public class CategoryProduct {
+    /* 3 loai sp luu o day : dien tu , thoi trang , my pham*/
+    @Id
+    @Field(value = "_id")
+    private ObjectId id;
 
-	
-										/* 3 loai sp luu o day : dien tu , thoi trang , my pham*/
-	@Id
-	@Field(value="_id")
-	private ObjectId id ;
-	
-	@Field(value="type_product")
-	private String typeProduct;
-	
-	@Field(value="parent_id")
-	private ObjectId parentId  ;
-	
-	@Field(value="description")
-	private String description;
-	
-	@Field(value="created_date")
-	private Date  createdDate ;
-	
-	@Field(value="created_by")
-	private String createdBy;
-	
-	@Field(value="updated_date")
-	private Date updatedDate ;
-	
-	@Field(value="updated_by")
-	private String updatedBy ;
+    @Field(value = "type_product")
+    private String typeProduct;
+
+    @Field(value = "parent_id")
+    private ObjectId parentId;
+
+    @Field(value = "description")
+    private String description;
+
+    @Field(value = "created_date")
+    private Date createdDate;
+
+    @Field(value = "created_by")
+    private String createdBy;
+
+    @Field(value = "updated_date")
+    private Date updatedDate;
+
+    @Field(value = "updated_by")
+    private String updatedBy;
 }
