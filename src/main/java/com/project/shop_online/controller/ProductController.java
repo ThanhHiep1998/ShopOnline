@@ -10,6 +10,6 @@ public class ProductController {
 
     @RequestMapping("/")
     public String home() {
-        return "index";
+        return "indexaa";
     }
 }
