@@ -10,6 +10,6 @@ public interface ImagesService {
 	List<Images> findAll();
 	Images findById(ObjectId id);
 	void add(Images Images);
-	void update(Images Images);
+	void update(Images images);
 	void delete(ObjectId id);
 }

@@ -1,36 +1,42 @@
 package com.project.shop_online.serviceImpl;
 
 import java.util.List;
-import java.util.Locale.Category;
+import java.util.Optional;
 
 import org.bson.types.ObjectId;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.project.shop_online.model.CategoryProduct;
+import com.project.shop_online.repository.CategoryProductRepository;
 import com.project.shop_online.service.CategoryProductService;
 
 @Service
 public class CategoryProductServiceImpl implements CategoryProductService {
 
+	@Autowired
+	private CategoryProductRepository categoryRepository;
+	
 	@Override
-	public List<Category> findAll() {
+	public List<CategoryProduct> findAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return categoryRepository.findAll();
 	}
 
 	@Override
-	public Category findById(ObjectId id) {
+	public CategoryProduct findById(ObjectId id) {
 		// TODO Auto-generated method stub
-		return null;
+		return categoryRepository.findById(id).get();
 	}
 
 	@Override
-	public void add(Category category) {
+	public void add(CategoryProduct categories) {
 		// TODO Auto-generated method stub
-		
+		categoryRepository.save(categories);
 	}
 
 	@Override
-	public void update(Category category) {
+	public void update(CategoryProduct categories) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -38,7 +44,10 @@ public class CategoryProductServiceImpl implements CategoryProductService {
 	@Override
 	public void delete(ObjectId id) {
 		// TODO Auto-generated method stub
-		
+		Optional<CategoryProduct> category = categoryRepository.findById(id);
+		categoryRepository.delete(category.get());
 	}
+
+	
 
 }

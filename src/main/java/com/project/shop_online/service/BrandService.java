@@ -11,6 +11,6 @@ public interface BrandService {
 	List<Brand> findAll();
 	Brand findById(ObjectId id);
 	void add(Brand brand);
-	void update(Brand dto);
+	void update(Brand brand);
 	void delete(ObjectId id);
 }
