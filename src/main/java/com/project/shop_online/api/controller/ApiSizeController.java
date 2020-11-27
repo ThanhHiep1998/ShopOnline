@@ -1,7 +1,7 @@
-package com.project.shop_online.controller;
+package com.project.shop_online.api.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ElectronicsController {
+public class ApiSizeController {
 }

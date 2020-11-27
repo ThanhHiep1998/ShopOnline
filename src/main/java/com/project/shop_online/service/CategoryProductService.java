@@ -1,7 +1,17 @@
 package com.project.shop_online.service;
 
-import org.springframework.stereotype.Service;
+import java.util.List;
+import java.util.Locale.Category;
 
-@Service
+import org.bson.types.ObjectId;
+
+import com.project.shop_online.model.CategoryProduct;
+
+
 public interface CategoryProductService {
+	List<CategoryProduct> findAll();
+	CategoryProduct findById(ObjectId id);
+	void add(CategoryProduct categories);
+	void update(CategoryProduct categories);
+	void delete(ObjectId id);
 }

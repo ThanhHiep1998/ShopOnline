@@ -1,7 +1,16 @@
 package com.project.shop_online.service;
 
-import org.springframework.stereotype.Service;
+import java.util.List;
+import java.util.Locale.Category;
 
-@Service
+import org.bson.types.ObjectId;
+
+import com.project.shop_online.model.Size;
+
 public interface SizeService {
+	List<Size> findAll();
+	Size findById(ObjectId id);
+	void add(Size size);
+	void update(Size size);
+	void delete(ObjectId id);
 }
