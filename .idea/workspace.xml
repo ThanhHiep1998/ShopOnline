@@ -23,10 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e3c623f-54d3-4aee-a49d-6d8b4079a6d2" name="Default Changelist" comment="a">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +75,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ChitChatAPI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shop" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -87,17 +84,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ShopOnlineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="shop-online" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.shop_online.ShopOnlineApplication" />
@@ -122,6 +108,7 @@
       <workItem from="1606286485919" duration="2351000" />
       <workItem from="1606387197317" duration="538000" />
       <workItem from="1606527663963" duration="5699000" />
+      <workItem from="1606535309675" duration="170000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1606190768708</created>
@@ -157,10 +144,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1606190767044" />
-    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1606209997717">
+    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1606535355054">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606209997717" />
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606535355054" />
     <state width="373" height="327" key="Git.Branch.Popup" timestamp="1606528738903">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
