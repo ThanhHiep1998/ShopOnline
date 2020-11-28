@@ -1,43 +1,49 @@
 package com.project.shop_online.serviceImpl;
 
-import com.project.shop_online.model.Role;
-import com.project.shop_online.service.RoleService;
-
-import java.util.List;
-
+import com.project.shop_online.model.Size;
+import com.project.shop_online.repository.SizeRepository;
+import com.project.shop_online.service.SizeService;
 import org.bson.types.ObjectId;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Optional;
+
 @Service
-public class SizeServiceImpl implements RoleService {
+public class SizeServiceImpl implements SizeService {
+    @Autowired
+    private SizeRepository sizeRepository;
 
-	@Override
-	public List<Role> findAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public List<Size> findAll() {
+        // TODO Auto-generated method stub
+        return sizeRepository.findAll();
+    }
 
-	@Override
-	public Role findById(ObjectId id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public Size findById(ObjectId id) {
+        // TODO Auto-generated method stub
+        return sizeRepository.findById(id).get();
+    }
 
-	@Override
-	public void add(Role role) {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void add(Size size) {
+        // TODO Auto-generated method stub
+        sizeRepository.save(size);
 
-	@Override
-	public void update(Role role) {
-		// TODO Auto-generated method stub
-		
-	}
+    }
 
-	@Override
-	public void delete(ObjectId id) {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void update(Size size) {
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public void delete(ObjectId id) {
+        // TODO Auto-generated method stub
+        Optional<Size> size = sizeRepository.findById(id);
+        sizeRepository.delete(size.get());
+    }
 }
