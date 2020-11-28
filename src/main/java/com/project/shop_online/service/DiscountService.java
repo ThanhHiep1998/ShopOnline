@@ -1,7 +1,15 @@
 package com.project.shop_online.service;
 
-import org.springframework.stereotype.Service;
+import java.util.List;
 
-@Service
+import org.bson.types.ObjectId;
+
+import com.project.shop_online.model.Discount;
+
 public interface DiscountService {
+	List<Discount> findAll();
+	Discount findById(ObjectId id);
+	void add(Discount discount);
+	void update(Discount discount);
+	void delete(ObjectId id);
 }

@@ -1,7 +1,15 @@
 package com.project.shop_online.service;
 
-import org.springframework.stereotype.Service;
+import java.util.List;
 
-@Service
+import org.bson.types.ObjectId;
+
+import com.project.shop_online.model.Orders;
+
 public interface OrdersService {
+	List<Orders> findAll();
+	Orders findById(ObjectId id);
+	void add(Orders orders);
+	void update(Orders oders);
+	void delete(ObjectId id);
 }

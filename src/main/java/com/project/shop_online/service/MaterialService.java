@@ -1,7 +1,15 @@
 package com.project.shop_online.service;
 
-import org.springframework.stereotype.Service;
+import java.util.List;
 
-@Service
+import org.bson.types.ObjectId;
+
+import com.project.shop_online.model.Material;
+
 public interface MaterialService {
+	List<Material> findAll();
+	Material findById(ObjectId id);
+	void add(Material material);
+	void update(Material material);
+	void delete(ObjectId id);
 }
